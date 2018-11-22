@@ -1,0 +1,28 @@
+.xyh_top {padding-bottom: 20px;}
+.xyh_top h1{ font-size: 16px; font-weight: normal;display: inline-block;}
+.xyh_top span{ float: right}
+.xyh_table{ background-color: #fff; margin-bottom: 20px;}
+.xyh_table .xyh_search{ padding: 20px;}    
+
+.paging{ text-align: right}
+
+.xyh_table span.xyh_img{ width: 80px;height: 80px;display: inline-block;border-radius: 5px;background-color: #fff; border: solid 1px #EEE;}
+.xyh_table span.xyh_img img{ width: 100%;height: 100%;}     
+.xyh_table .xyh_ipone label{ line-height: 80px;}
+.xyh_table .el_upload_tip{ padding-left: 10px;}         //图片样式
+
+// 公共样式 完成
+
+#xyh_content_list .input_{ width:250px; padding-right:10px;}
+#xyh_content_list .input_time{ width:200px; padding-right:10px;}
+#xyh_content_list .title_form{ padding-right:10px;}
+
+#xyh_content_istration .xyh_submit{ padding-left: 80px;}
+#xyh_content_istration .xyh_span_text{ padding-left: 10px;}
+
+#xyh_content_list_modify .el-form-item__content{        //富文本
+    .edui-default .edui-toolbar{
+      line-height: 20px !important;
+    }
+}
+#xyh_content_list_modify .el-form-item__content{ line-height: inherit;}

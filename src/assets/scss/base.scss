@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'HWKT';
+  src: url('../fonts/HWKT.eot');
+  src:
+    url('../fonts/HWKT.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/HWKT.woff') format('woff'),
+    url('../fonts/HWKT.ttf') format('truetype'),
+    url('../fonts/HWKT.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #373d41;
+  background-color: #EEE;
+}
+input, select, textarea, button {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  outline: none;
+  transition: all 0.5s;
+  vertical-align: middle;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  //box-sizing: border-box;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+em, i, ins {
+  font-style: normal;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+  margin-top: -2px;
+  max-width: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+a:hover {
+  color: #d22e2e;
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cl {
+  clear: both;
+}
+
+.none {
+  display: none;
+}
+.text_c{ text-align: center;}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+::selection {
+  background: #373d41;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  width: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #373d41;
+}
+
+// element init
+.el-menu--vertical .el-menu{ background-color: #FFF; padding: 0; border-radius: 5px; overflow: hidden;}
+.el-menu{ background-color: transparent; border-right: none; font-size: 12px;}
+.el-menu-item{ height: 40px; line-height: 40px; font-size: 12px;}
+.el-menu-item,.el-submenu{ background-color: #42485b; color: #FFF;}
+.el-menu-item:hover, .el-submenu__title:hover{ background-color: #00c1de;}
+.el-menu-item:focus{ background-color: #42485b;}
+.el-menu-item:hover i, .el-menu-item:focus i,.el-submenu__title:hover i{ color: #FFF;}
+.el-menu-item.is-active{ color: #FFF;}
+.el-menu-item i{ font-size: 14px;}
+.el-submenu .el-menu-item{ min-width: inherit; background-color: transparent;}
+.el-submenu__title{ color: #FFF; height: 40px; line-height: 40px; font-size: 12px; transition:none;}
+.el-submenu__title [class^="el-icon-"]{ font-size: 15px;}
+.el-menu li ul.el-menu{ background-color: #333744; }
+.el-menu li ul li.el-menu-item{ height: 35px; line-height: 35px;}
+.el-menu li ul li.el-menu-item:hover{background: #4a5064;}
+.el-menu li ul li.el-menu-item.is-active:hover{background: #00c1de;}
+.el-menu li ul li.is-active{ background-color: #00c1de;}
+.el-menu--collapse > .el-menu-item span, .el-menu--collapse > .el-submenu > .el-submenu__title span{ display: none;}
+
+// common
+.wrapper{ position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+
+// topbar
+.top-bar{ position: fixed; top: 0; left: 0; right: 0; height: 50px; background-color: #373d41; color: #FFF; z-index: 80;}
+.top-bar a{ color: #FFF;}
+.top-bar a.top-bar-link{ float: left; border-right: solid 1px #2a2f32; padding: 0 12px; line-height: 50px;}
+.top-bar a.top-bar-link:hover,.top-bar-r .el-dropdown:hover{ background: #2a2f32; }
+.top-bar .el-dropdown{ float: left; padding: 0 12px; color: #FFF; cursor: pointer; border-right: solid 1px #2a2f32; line-height: 50px;}
+.top-bar .el-dropdown.avatar .el-dropdown-link img{ border-radius: 50%;}
+.top-bar .avatar{ float: left; position: relative;}
+.top-bar .avatar .avatar-img{ line-height: 50px; padding: 0 12px; cursor: pointer;}
+.top-bar .avatar .avatar-img:hover{ background: #2a2f32; }
+.top-bar .avatar .avatar-img img{ border-radius: 50%; width: 36px; height: 36px;}
+.top-bar .avatar .avatar-dropdown{ position: absolute; top: 50px; right: 0; background-color: #FFF; box-shadow: 0 1px 3px rgba(0,0,0,.2); border: solid 1px #eaeaea; width: 270px; color: #373d41;}
+.top-bar .avatar .avatar-dropdown .avatar-info{ text-align: center; border-bottom: solid 1px #eaeaea; padding: 15px 0;}
+.top-bar .avatar .avatar-dropdown .avatar-info p img{ border-radius: 50%; width: 36px; height: 36px; margin-bottom: 5px;}
+.top-bar .avatar .avatar-dropdown .avatar-list{ margin: 8px 0; padding: 8px 15px;}
+.top-bar .avatar .avatar-dropdown .avatar-list ul li{ float: left; width: 33.3333%; text-align: center;}
+.top-bar .avatar .avatar-dropdown .avatar-list ul li a{ color: #373d41; display: inline-block; width: 80px; height: 80px;}
+.top-bar .avatar .avatar-dropdown .avatar-list ul li a:hover{ background: #f5f5f5; }
+.top-bar .avatar .avatar-dropdown .avatar-list ul li a i{ font-size: 20px; margin: 20px auto 4px;}
+.top-bar .avatar .avatar-dropdown .avatar-out a{ display: block; text-align: center; height: 40px; line-height: 40px; background-color: #F5F5F5; color: #373d41;}
+.top-bar-r{ border-left: solid 1px #2a2f32;}
+
+// left
+.left{ width: 180px; position: absolute; top: 50px; bottom: 0; background-color: #333744; overflow-y: auto;}
+.left.small{ width: 64px;}
+.menu-switch{ height: 30px; color: #FFF; text-align: center; font-weight: bold; line-height: 30px; background-color: #4a5064; cursor: pointer; font-size: 20px;}
+.left .isPrincipal{ text-align: center; padding: 30px 0;}
+.left .iconfont{ margin-right: 10px; font-size: 20px;}
+
+  // main
+.main{ position: absolute; top: 50px; right: 0; left: 180px; padding: 20px; bottom: 0; overflow-y: auto;}
+.main.big{ left: 64px;}
+
+// el-pages
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{ background-color: #FFF !important;}
+.el-pagination.is-background .btn-next.disabled,.el-pagination.is-background .btn-prev.disabled{ background-color: rgba(255,255,255,.5) !important;}
+.el-pagination.is-background .el-pager li.active{ background-color: #373d41 !important;}
